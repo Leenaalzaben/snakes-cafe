@@ -36,7 +36,7 @@ startup()
 orderList()
 while True:
     order = user_insertion()
-    if order == "quit":
+    if order.lower() == "quit":
         break
     elif order in menu["Appetizers"] + menu["Entrees"] + menu["Desserts"] + menu["Drinks"]:
         if order in orders:
