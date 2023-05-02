@@ -1,6 +1,6 @@
 # snakes-cafe
 
-# LAB - Class 01
+# First LAB - Class 01
 
 ## Project: Snakes-Cafe
 
