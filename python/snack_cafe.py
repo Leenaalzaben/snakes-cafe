@@ -7,6 +7,7 @@ menu = {
 
 orders = {}
 
+
 def startup():
     print('''
     **************************************
@@ -17,19 +18,31 @@ def startup():
     **************************************
     ''')
 
+
 def orderList():
     print(''' 
      ***********************************
      ** What would you like to order? **
      ***********************************
      ''')
+    for Selection, items in menu.items():
+        print(f"{Selection}:")
+        print("-" * len(Selection))
+        print()
+        for item in items:
+            print(f" - {item}")
+        print()
+        print()
+
 
 def user_insertion():
     user_input = input(">")
     return user_input
 
+
 def close_application():
     print("Thank you for choosing Snakes Cafe, We hope to see you again soon!")
+
 
 startup()
 
@@ -43,8 +56,10 @@ while True:
             orders[order] += 1
         else:
             orders[order] = 1
-        print(f"** {orders[order]} orders of {order} have been added to your meal **")
+        print(
+            f"** {orders[order]} orders of {order} have been added to your meal **")
     else:
-     print(f"I'm sorry, {order} is not available. Please choose a different option.")
+        print(
+            f"I'm sorry, {order} is not available. Please choose a different option.")
 
 close_application()
