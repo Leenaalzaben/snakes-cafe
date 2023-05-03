@@ -25,9 +25,9 @@ def orderList():
      ** What would you like to order? **
      ***********************************
      ''')
-    for Selection, items in menu.items():
-        print(f"{Selection}:")
-        print("-" * len(Selection))
+    for Select, items in menu.items():
+        print(f"{Select}:")
+        print("-" * len(Select))
         print()
         for item in items:
             print(f" - {item}")
